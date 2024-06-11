@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira de Gestão</title>
+
+</head>
+<body>
+    <div class="container">
+
+        <hr>
+        <div class="conteudo">
+            <h2>Saldo: </h2>
+            <form action="/Historico/carrega" method="post">
+                <div class="historico">
+                    <h1>Histórico</h1>
+                    <div class="tipo_historico">
+                        <h2 id="" name="tipoHistorico">@ViewBag.Email</h2>
+                        <h2 id="" name="valor">@ViewBag.tipoHistorico</h2>
+                        <h2 id="" name="data">@ViewBag.dataAlteracao</h2>
+                        <input class="button" type="submit" value="PESQUISAR">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+</html>
